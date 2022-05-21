@@ -1,4 +1,5 @@
-﻿using Day39CaseStudy.DataAccess.Models;
+﻿using Day39CaseStudy.ConsoleHelp;
+using Day39CaseStudy.DataAccess.Models;
 using Day39CaseStudy.Services.DbService.Interfaces;
 using Day39CaseStudy.Services.Factory;
 
@@ -109,7 +110,7 @@ public class UserInterfaceCrudProductService
     }
     public void Display(Product p)
     {
-        Console.WriteLine($"Nothing is impossible  {p.BrandId} || {p.Brand.BrandName}");
+        ConsoleHelper.WriteHeader(120,$" {p.BrandId} || {p.Brand.BrandName}");
 
 
         Console.WriteLine($"{p.ProductId}, {p.ProductName}," +
